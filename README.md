@@ -5,4 +5,5 @@ linux轻量级高并发Web服务器
 3. 采用模拟 Proactor的事件处理模式，利用线程池实现多线程机制，实现高并发通信，减少频繁创建和销毁线程带来的开销；（信号和互斥锁）
 4. 主进程负责事件的读写，子线程负责业务逻辑——用有限状态机解析HTTP（GET）请求报文；生成相应的响应报文。
 5. 利用链表数据结构实现心跳机制（超时检测处理）。
-![image](https://user-images.githubusercontent.com/76891975/225385524-e3786bf4-8e15-4232-97a1-4dcfadb62f2e.png)
+![流程图](https://user-images.githubusercontent.com/76891975/228321694-5fd71259-8154-4026-be37-e4dc4c2e602f.png)
+
